@@ -439,99 +439,116 @@
                       <p class="text-sm font-medium text-gray-500 mt-2">Please provide the details of your arrest or
                         incident.</p>
                     </div>
-                    <form id="contactForm" class="space-y-5 lg:space-y-6" name="contact" method="POST" data-netlify="true">
-                      <input
-                        type="hidden" name="_next" value="https://lamos-law-website.vercel.app/thankyou.html"><input
-                        type="hidden" name="_subject" value="New Legal Intake Submission"><input type="hidden"
-                        name="_captcha" value="false">
-                      <div><label
-                          class="block text-[11px] font-extrabold uppercase tracking-[0.15em] text-brand-900/60 mb-2.5 ml-1">Full
-                          Legal Name <span class="text-red-500">*</span></label><input type="text" name="fullName"
-                          required=""
-                          class="w-full bg-gray-50 hover:bg-gray-100 focus:bg-white border border-gray-200 rounded-xl px-3 lg:px-4 py-3 lg:py-3 text-brand-900 placeholder:text-gray-400 focus:border-accent-600 focus:ring-4 focus:ring-accent-600/10 outline-none transition-all duration-300 font-medium text-base tracking-normal"
-                          placeholder="e.g. John Michael Doe" value=""></div>
-                      <div class="grid md:grid-cols-2 gap-6">
-                        <div><label
-                            class="block text-[11px] font-extrabold uppercase tracking-[0.15em] text-brand-900/60 mb-2.5 ml-1">Phone
-                            Number <span class="text-red-500">*</span></label><input type="tel" name="phone" required=""
-                            class="w-full bg-gray-50 hover:bg-gray-100 focus:bg-white border border-gray-200 rounded-xl px-3 lg:px-4 py-3 lg:py-3 text-brand-900 placeholder:text-gray-400 focus:border-accent-600 focus:ring-4 focus:ring-accent-600/10 outline-none transition-all duration-300 font-medium text-base tracking-normal"
-                            placeholder="(555) 000-0000" value=""></div>
-                        <div><label
-                            class="block text-[11px] font-extrabold uppercase tracking-[0.15em] text-brand-900/60 mb-2.5 ml-1">Email
-                            Address <span class="text-red-500">*</span></label><input type="email" name="email"
-                            required=""
-                            class="w-full bg-gray-50 hover:bg-gray-100 focus:bg-white border border-gray-200 rounded-xl px-3 lg:px-4 py-3 lg:py-3 text-brand-900 placeholder:text-gray-400 focus:border-accent-600 focus:ring-4 focus:ring-accent-600/10 outline-none transition-all duration-300 font-medium text-base tracking-normal"
-                            placeholder="name@example.com" value=""></div>
+                    <form action="https://formspree.io/f/xvwepawb" method="POST" class="space-y-5 lg:space-y-6">
+                      <!-- Formspree meta -->
+                      <input type="hidden" name="_subject" value="New Legal Intake Submission">
+                      <input type="hidden" name="_redirect" value="https://lamos-law-website.vercel.app/thank-you">
+                    
+                      <!-- Full Name -->
+                      <div>
+                        <label class="block text-[11px] font-extrabold uppercase tracking-[0.15em] text-brand-900/60 mb-2.5 ml-1">
+                          Full Legal Name <span class="text-red-500">*</span>
+                        </label>
+                        <input type="text" name="fullName" required placeholder="e.g. John Michael Doe" class="w-full bg-gray-50 hover:bg-gray-100 focus:bg-white border border-gray-200 rounded-xl px-4 py-3
+                                 text-brand-900 placeholder:text-gray-400 focus:border-accent-600 focus:ring-4
+                                 focus:ring-accent-600/10 outline-none transition">
                       </div>
-                      <div class="grid md:grid-cols-2 gap-6">
-                        <div><label class="block text-[11px] font-extrabold uppercase tracking-[0.15em] text-brand-900/60 mb-2.5 ml-1">Case
-                            Number (If Known)</label><input type="text" name="caseNumber"
-                            class="w-full bg-gray-50 hover:bg-gray-100 focus:bg-white border border-gray-200 rounded-xl px-3 lg:px-4 py-3 lg:py-3 text-brand-900 placeholder:text-gray-400 focus:border-accent-600 focus:ring-4 focus:ring-accent-600/10 outline-none transition-all duration-300 font-medium text-base tracking-normal"
-                            placeholder="e.g. 23-CF-12345"></div>
-                        <div><label
-                            class="block text-[11px] font-extrabold uppercase tracking-[0.15em] text-brand-900/60 mb-2.5 ml-1">Preferred
-                            Contact Method</label>
-                          <div class="relative"><select name="contactPreference"
-                              class="w-full bg-gray-50 hover:bg-gray-100 focus:bg-white border border-gray-200 rounded-xl px-3 lg:px-4 py-3 lg:py-3 text-brand-900 placeholder:text-gray-400 focus:border-accent-600 focus:ring-4 focus:ring-accent-600/10 outline-none transition-all duration-300 font-medium text-base tracking-normal appearance-none cursor-pointer">
-                              <option value="Phone">Phone Call</option>
-                              <option value="Email">Email</option>
-                              <option value="Either">Either</option>
-                            </select>
-                            <div class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-chevron-down w-5 h-5">
-                                <path d="m6 9 6 6 6-6"></path>
-                              </svg></div>
-                          </div>
-                        </div>
-                      </div>
+                    
+                      <!-- Phone + Email -->
                       <div class="grid md:grid-cols-2 gap-6">
                         <div>
-                          <label for="state"
-                            class="block text-[11px] font-extrabold uppercase tracking-[0.15em] text-brand-900/60 mb-2.5 ml-1">
+                          <label class="block text-[11px] font-extrabold uppercase tracking-[0.15em] text-brand-900/60 mb-2.5 ml-1">
+                            Phone Number <span class="text-red-500">*</span>
+                          </label>
+                          <input type="tel" name="phone" required placeholder="(555) 000-0000" class="w-full bg-gray-50 hover:bg-gray-100 focus:bg-white border border-gray-200 rounded-xl px-4 py-3
+                                   text-brand-900 placeholder:text-gray-400 focus:border-accent-600 focus:ring-4
+                                   focus:ring-accent-600/10 outline-none transition">
+                        </div>
+                    
+                        <div>
+                          <label class="block text-[11px] font-extrabold uppercase tracking-[0.15em] text-brand-900/60 mb-2.5 ml-1">
+                            Email Address <span class="text-red-500">*</span>
+                          </label>
+                          <!-- REQUIRED by Formspree -->
+                          <input type="email" name="_replyto" required placeholder="name@example.com" class="w-full bg-gray-50 hover:bg-gray-100 focus:bg-white border border-gray-200 rounded-xl px-4 py-3
+                                   text-brand-900 placeholder:text-gray-400 focus:border-accent-600 focus:ring-4
+                                   focus:ring-accent-600/10 outline-none transition">
+                        </div>
+                      </div>
+                    
+                      <!-- Case Number + Contact Preference -->
+                      <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                          <label class="block text-[11px] font-extrabold uppercase tracking-[0.15em] text-brand-900/60 mb-2.5 ml-1">
+                            Case Number (If Known)
+                          </label>
+                          <input type="text" name="caseNumber" placeholder="e.g. 23-CF-12345" class="w-full bg-gray-50 hover:bg-gray-100 focus:bg-white border border-gray-200 rounded-xl px-4 py-3
+                                   text-brand-900 placeholder:text-gray-400 focus:border-accent-600 focus:ring-4
+                                   focus:ring-accent-600/10 outline-none transition">
+                        </div>
+                    
+                        <div>
+                          <label class="block text-[11px] font-extrabold uppercase tracking-[0.15em] text-brand-900/60 mb-2.5 ml-1">
+                            Preferred Contact Method
+                          </label>
+                          <select name="contactPreference" class="w-full bg-gray-50 hover:bg-gray-100 focus:bg-white border border-gray-200 rounded-xl
+                                   px-4 py-3 text-brand-900 focus:border-accent-600 focus:ring-4
+                                   focus:ring-accent-600/10 outline-none transition">
+                            <option value="Phone">Phone Call</option>
+                            <option value="Email">Email</option>
+                            <option value="Either">Either</option>
+                          </select>
+                        </div>
+                      </div>
+                    
+                      <!-- State + County -->
+                      <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                          <label class="block text-[11px] font-extrabold uppercase tracking-[0.15em] text-brand-900/60 mb-2.5 ml-1">
                             State where the case is pending <span class="text-red-500">*</span>
                           </label>
-                          <select id="state" name="state" required class="w-full bg-gray-50 hover:bg-gray-100 focus:bg-white border border-gray-200 rounded-xl
+                          <select name="state" required class="w-full bg-gray-50 hover:bg-gray-100 focus:bg-white border border-gray-200 rounded-xl
                                    px-4 py-3 text-brand-900 focus:border-accent-600 focus:ring-4
                                    focus:ring-accent-600/10 outline-none transition">
                             <option value="" disabled selected>Select a state</option>
                             <option value="Florida">Florida</option>
-                            <option value="Other / Not Florida">Other / Not Florida</option>
+                            <option value="Other">Other / Not Florida</option>
                           </select>
                         </div>
-                      
+                    
                         <div>
-                          <label for="county"
-                            class="block text-[11px] font-extrabold uppercase tracking-[0.15em] text-brand-900/60 mb-2.5 ml-1">
+                          <label class="block text-[11px] font-extrabold uppercase tracking-[0.15em] text-brand-900/60 mb-2.5 ml-1">
                             County / Jurisdiction <span class="text-red-500">*</span>
                           </label>
-                          <input type="text" id="county" name="county" placeholder="e.g., St. Lucie County" required class="w-full bg-gray-50 hover:bg-gray-100 focus:bg-white border border-gray-200 rounded-xl
+                          <input type="text" name="county" required placeholder="e.g. St. Lucie County" class="w-full bg-gray-50 hover:bg-gray-100 focus:bg-white border border-gray-200 rounded-xl
                                    px-4 py-3 text-brand-900 focus:border-accent-600 focus:ring-4
                                    focus:ring-accent-600/10 outline-none transition">
                         </div>
                       </div>
-
+                    
+                      <!-- Message -->
                       <div>
-                        <label
-                          class="block text-[11px] font-extrabold uppercase tracking-[0.15em] text-brand-900/60 mb-2.5 ml-1">Brief
-                          Description <span class="text-red-500">*</span></label>
-                          <textarea name="message" required=""
-                          rows="5"
-                          class="w-full bg-gray-50 hover:bg-gray-100 focus:bg-white border border-gray-200 rounded-xl px-3 lg:px-4 py-3 lg:py-3 text-brand-900 placeholder:text-gray-400 focus:border-accent-600 focus:ring-4 focus:ring-accent-600/10 outline-none transition-all duration-300 font-medium text-base tracking-normal"
-                          placeholder="Briefly describe the incident...">
-                        </textarea>
-                        </div>
-                        <button type="submit"
-                        class="w-full bg-brand-900 hover:bg-brand-800 text-white font-bold py-3 lg:py-5 rounded-xl transition-all flex items-center justify-center gap-2 mt-4 text-base tracking-wide shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">Submit
-                        Request <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                          stroke-linejoin="round" class="lucide lucide-send w-4 h-4">
+                        <label class="block text-[11px] font-extrabold uppercase tracking-[0.15em] text-brand-900/60 mb-2.5 ml-1">
+                          Brief Description <span class="text-red-500">*</span>
+                        </label>
+                        <textarea name="message" rows="5" required placeholder="Briefly describe the incident..." class="w-full bg-gray-50 hover:bg-gray-100 focus:bg-white border border-gray-200 rounded-xl
+                                 px-4 py-3 text-brand-900 placeholder:text-gray-400 focus:border-accent-600
+                                 focus:ring-4 focus:ring-accent-600/10 outline-none transition"></textarea>
+                      </div>
+                    
+                      <!-- Submit -->
+                      <button type="submit" class="w-full bg-brand-900 hover:bg-brand-800 text-white font-bold py-3 lg:py-5
+                               rounded-xl transition-all flex items-center justify-center gap-2
+                               shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                        Submit Request
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round">
                           <path d="m22 2-7 20-4-9-9-4Z"></path>
                           <path d="M22 2 11 13"></path>
                         </svg>
                       </button>
                     </form>
+
                   </div>
                 </div>
               </div>
@@ -593,42 +610,6 @@
     </div>
     <!-- ================= SCRIPTS ================= -->
     <script>
-      document.getElementById("contactForm").addEventListener("submit", function (e) {
-        e.preventDefault();
-
-        const get = n => document.querySelector(`[name="${n}"]`).value.trim();
-
-        const fullName = get("fullName");
-        const phone = get("phone");
-        const email = get("email");
-        const pref = get("contactPreference");
-        const caseNum = get("caseNumber") || "N/A";
-        const msg = get("message");
-
-        const subject = "New Legal Intake – Video Evidence Review";
-        const body =
-          `Full Name: ${fullName}
-    Phone: ${phone}
-    Email: ${email}
-    Preferred Contact: ${pref}
-    Case Number: ${caseNum}
-    
-    Message:
-    ${msg}`;
-
-        window.location.href =
-          "mailto:dmilolamos@gmail.com?subject=" +
-          encodeURIComponent(subject) +
-          "&body=" +
-          encodeURIComponent(body);
-
-        setTimeout(() => {
-          navigator.clipboard.writeText(body).then(() => {
-            document.getElementById("emailFallback").classList.remove("hidden");
-          });
-        }, 600);
-      });
-
      document.querySelectorAll(".copy-btn").forEach(btn => {
         btn.addEventListener("click", () => {
           const value = btn.dataset.copy;
