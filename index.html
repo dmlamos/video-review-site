@@ -1,212 +1,688 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth" style="--seo-csr-color: #0072B2; --seo-ssr-color: #F0E442;">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>David M. Lamos | Attorney at Law</title>
-        <meta name="description"
-            content="Florida Criminal Defense, Post-Conviction &amp; Evidence Review. David M. Lamos, Attorney at Law, Fort Pierce, Florida.">
+  <head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David M. Lamos, Esq. | Independent Video Evidence Review</title>
+    <meta name="description"
+      content="Independent video evidence review services by Florida Attorney David M. Lamos. Objective, forensic analysis.">
 
-        <!-- Minimal, Bar-safe typography -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&amp;family=Source+Serif+4:wght@400;600&amp;display=swap"
-            rel="stylesheet">
-        <style>
-            :root {
-                --bg: #f9f9f7;
-                --text: #111;
-                --muted: #555;
-                --rule: #ddd;
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts: Manrope (Modern, Geometric, Premium) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+      rel="stylesheet">
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Manrope"', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                900: '#1f3a5f', // Navy/Charcoal
+                800: '#1E293B',
+                50: '#F8FAFC',
+              },
+              accent: {
+               600: '#6b1f2b',  /* Burgundy / primary */
+               700: '#571924',
+               500: '#7c2432',
+              },
+            },
+            backgroundImage: {
+              'grid-pattern': "linear-gradient(to right, #f1f5f9 1px, transparent 1px), linear-gradient(to bottom, #f1f5f9 1px, transparent 1px)",
             }
+          }
+        }
+      }
+    </script>
 
-            * {
-                box-sizing: border-box;
-            }
+  </head>
 
-            body {
-                margin: 0;
-                font-family: 'Source Serif 4', serif;
-                color: var(--text);
-                background: var(--bg);
-                line-height: 1.6;
-            }
-
-            .container {
-                max-width: 1100px;
-                margin: 0 auto;
-                padding: 3rem 1.5rem 4rem;
-            }
-
-            header {
-                text-align: center;
-                margin-bottom: 3rem;
-            }
-
-            header h1 {
-                font-family: 'Libre Baskerville', serif;
-                font-size: 2.6rem;
-                margin-bottom: 0.25rem;
-                font-weight: 700;
-            }
-
-            header h2 {
-                font-size: 1.1rem;
-                font-weight: 400;
-                margin: 0.25rem 0 1rem;
-            }
-
-            header p {
-                margin: 0.25rem 0;
-            }
-
-            hr {
-                border: none;
-                border-top: 1px solid var(--rule);
-                margin: 3rem 0;
-            }
-
-            .grid {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 3rem;
-            }
-
-            section h3 {
-                font-family: 'Libre Baskerville', serif;
-                font-size: 1.25rem;
-                margin-bottom: 0.75rem;
-                font-weight: 700;
-            }
-
-            section p {
-                margin-top: 0;
-            }
-
-            ul {
-                padding-left: 1.2rem;
-            }
-
-            ul li {
-                margin-bottom: 0.5rem;
-            }
-
-            footer {
-                text-align: center;
-                margin-top: 4rem;
-                font-size: 0.95rem;
-                color: var(--muted);
-            }
-
-            footer p {
-                margin: 0.25rem 0;
-            }
-
-            @media (max-width: 900px) {
-                .grid {
-                    grid-template-columns: 1fr;
-                }
-            }
-
-        </style>
-    </head>
-
-    <body cz-shortcut-listen="true">
-        <div class="main-site-content">
-            <div class="container">
-                <header>
-                    <h1>David M. Lamos</h1>
-                    <h2>Attorney at Law</h2>
-                    <p>Florida Criminal Defense, Post-Conviction &amp; Evidence Review</p>
-                    <p>Fort Pierce, Florida</p>
-                    <p>(772) 464-4054</p>
-                </header>
-                <hr>
-                <div class="grid">
-                    <section>
-                        <h3>Practice Areas</h3>
-                        <p><strong>Criminal Defense</strong><br>Defense of misdemeanor and felony criminal charges,
-                            including DUI
-                            and related offenses, with particular attention to evidentiary requirements and procedural
-                            compliance.</p>
-                        <p><strong>Post-Conviction &amp; Sentencing Review</strong><br>Evaluation and litigation of
-                            post-conviction
-                            claims under Florida law, including unlawful sentences, constitutional violations, and
-                            claims involving
-                            attorney error or mishandling that may be raised under applicable post-conviction standards.
-                        </p>
-                        <p><strong>Evidence-Focused Case Review</strong><br>Structured review of records, transcripts,
-                            and video
-                            evidence to determine what the evidence <em>does — and does not — establish</em>.</p>
-                    </section>
-                    <section>
-                        <h3>Attorney Profile</h3>
-                        <p>David M. Lamos is a Florida attorney with decades of experience in criminal defense,
-                            appellate, and
-                            post-conviction litigation.</p>
-                        <p>His practice is focused on careful examination of the State’s evidence, identification of
-                            legal and
-                            procedural issues reflected in the record, and disciplined enforcement of constitutional
-                            safeguards.
-                            Representation is grounded in analysis and preparation, not assumptions or promises.</p>
-                    </section>
-                </div>
-                <hr>
-                <div class="grid">
-                    <section>
-                        <h3>Post-Conviction Review: Common Grounds</h3>
-                        <ul>
-                            <li>Denial of the right to appeal</li>
-                            <li>Lack of jurisdiction to enter judgment or impose sentence</li>
-                            <li>Sentences exceeding the maximum authorized by law</li>
-                            <li>Ineffective assistance of counsel, including attorney error or mishandling reflected in
-                                the record
-                            </li>
-                            <li>Newly discovered evidence</li>
-                            <li>Changes in the law that apply retroactively</li>
-                        </ul>
-                        <p>Each case depends on the record, the governing law, and the procedural posture of the matter.
-                        </p>
-                    </section>
-                    <section>
-                        <h3>Video Evidence Review</h3>
-                        <p>Video evidence is present in many criminal cases, but video does not always confirm what is
-                            claimed.</p>
-                        <ul>
-                            <li>What the video clearly shows</li>
-                            <li>What the video does <em>not</em> show</li>
-                            <li>Gaps, inconsistencies, or ambiguities</li>
-                            <li>Differences between video evidence and written reports</li>
-                            <li>Timing, perspective, and visibility limitations</li>
-                        </ul>
-                        <p>This service is analytical in nature and does not predict outcomes.</p>
-                    </section>
-                </div>
-                <hr>
-                <section>
-                    <h3>Credentials &amp; Experience</h3>
-                    <p>David M. Lamos was admitted to The Florida Bar in 1988. He previously served as an Assistant
-                        Public
-                        Defender and has been in private practice for decades.</p>
-                    <p>His experience includes jury trials, serious felony cases, probation and community control
-                        proceedings, and
-                        post-conviction litigation.</p>
-                    <p>As appellate and post-conviction counsel, he has appeared before Florida’s District Courts of
-                        Appeal and
-                        the Supreme Court of Florida. He is also admitted to practice before federal courts.</p>
-                </section>
-                <hr>
-                <footer>
-                    <p>(772) 464-4054</p>
-                    <p>Fort Pierce, Florida</p>
-                    <p>© David M. Lamos, Attorney at Law</p>
-                    <p>Florida Bar No. 0747386</p>
-                </footer>
+  <body class="antialiased overflow-x-hidden bg-brand-50" cz-shortcut-listen="true">
+    <div id="heurio-app" class="heurio-app" version="2.5.01.13">
+      <div class="heurio-overlay"><!----><!----></div><!---->
+    </div>
+    <div id="root">
+      <div class="min-h-screen flex flex-col bg-white">
+        <nav
+          class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-xl border-b border-gray-100 shadow-sm transition-all duration-300">
+          <div class="max-w-7xl mx-auto px-4 lg:px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3 cursor-pointer group">
+              <div
+                class="w-10 h-10 bg-brand-900 rounded-lg flex items-center justify-center text-white shadow-lg group-hover:bg-brand-800 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scale w-5 h-5">
+                  <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path>
+                  <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path>
+                  <path d="M7 21h10"></path>
+                  <path d="M12 3v18"></path>
+                  <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"></path>
+                </svg></div>
+              <div>
+                <h1 class="font-extrabold text-[17px] text-brand-900 leading-none tracking-tight">David M. Lamos, Esq.
+                </h1>
+                <p
+                  class="text-[10px] font-bold text-gray-500 tracking-[0.15em] uppercase mt-1 group-hover:text-accent-600 transition-colors">
+                  Independent Review</p>
+              </div>
             </div>
+            <div class="hidden md:flex items-center gap-10">
+              <a href="#process" class="text-[15px] font-bold text-gray-600 hover:text-brand-900 transition-colors tracking-tight">Process</a>
+                <a href="#fees"
+                class="text-[15px] font-bold text-gray-600 hover:text-brand-900 transition-colors tracking-tight">Fees</a>
+                <a href="#start"
+                class="px-7 py-3 bg-accent-600 text-white text-[15px] font-bold rounded-xl hover:bg-accent-700 transition-all shadow-lg shadow-accent-500/20 flex items-center gap-2 transform hover:-translate-y-0.5">Start
+                Intake <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-arrow-right w-4 h-4">
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </a>
+              </div>
+              <button id="mobileMenuBtn" class="md:hidden p-2 text-brand-900" aria-label="Toggle menu">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-menu w-6 h-6">
+                <line x1="4" x2="20" y1="12" y2="12"></line>
+                <line x1="4" x2="20" y1="6" y2="6"></line>
+                <line x1="4" x2="20" y1="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </nav>
+        <!-- MOBILE MENU -->
+        <div id="mobileMenu"
+          class="md:hidden fixed top-20 left-0 right-0 bg-white border-b border-gray-100 shadow-2xl hidden z-40">
+          <div class="px-4 py-6 lg:p-6 flex flex-col gap-1">
+            <a  href="#process" class="text-left py-4 px-4 font-bold text-gray-900 hover:bg-gray-50 rounded-xl text-lg">
+              Process
+            </a>
+            <a  href="#fees"
+              class="text-left py-4 px-4 font-bold text-gray-900 hover:bg-gray-50 rounded-xl text-lg">
+              Fees
+            </a>
+            <a href="#start" class="w-full py-3 lg:py-4 bg-brand-900 text-white font-bold rounded-lg lg:rounded-xl text-center mt-2
+                     flex items-center justify-center gap-2 text-md lg:text-lg shadow-lg">
+              Start Intake
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
         </div>
+        <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-20 bg-white overflow-hidden">
+          <div class="absolute inset-0 bg-grid-pattern opacity-[0.3]"></div>
+          <div
+            class="absolute top-0 right-0 w-[800px] h-[800px] bg-gray-50 rounded-full blur-3xl -z-10 translate-x-1/2 -translate-y-1/2">
+          </div>
+          <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+            <div style="opacity: 1; transform: none;">
+              <div
+                class="inline-flex items-center gap-2 mb-7 lg:mb-10 bg-white border border-gray-200 px-5 py-2 rounded-full shadow-sm hover:shadow-md transition-shadow">
+                <div class="w-2 h-2 rounded-full bg-green-500 animate-pulse shadow-[0_0_8px_rgba(34,197,94,0.5)]"></div>
+                <span class="text-brand-900 text-[11px] font-extrabold uppercase tracking-widest">Available 24/7 for
+                  Urgent Matters</span>
+              </div>
+              <h1 class="text-5xl lg:text-[5.5rem] font-extrabold text-brand-900 leading-[1.05] mb-6 lg:mb-8 tracking-tighter">
+                Video evidence <br>doesn't <span
+                  class="text-accent-600 decoration-4 decoration-accent-600/20 underline-offset-4">lie</span>.</h1>
+              <p
+                class="text-lg lg:text-2xl font-medium text-gray-500 leading-relaxed mb-9 lg:mb-12 max-w-2xl mx-auto tracking-tight">
+                Assumptions harden into facts when left unchallenged. Get a forensic, frame-by-frame breakdown of police
+                body-worn camera footage.</p>
+              <div class="flex flex-col sm:flex-row gap-5 justify-center items-center"><button
+                  class="w-full sm:w-auto bg-brand-900 text-white px-10 py-3 lg:py-5 rounded-xl lg:rounded-2xl font-bold hover:bg-brand-800 transition-all shadow-xl hover:shadow-2xl flex items-center justify-center gap-3 text-lg tracking-tight transform hover:-translate-y-1">Request
+                  Analysis</button>
+                <div class="flex items-center gap-6 lg:gap-8 px-4 lg:px-6 py-2">
+                  <div class="text-left">
+                    <div class="text-[10px] text-gray-400 font-extrabold uppercase tracking-widest mb-0.5">Florida Bar
+                    </div>
+                    <div class="text-brand-900 font-bold text-md lg:text-lg leading-none">No. 0747386</div>
+                  </div>
+                  <div class="w-px h-6 lg:h-10 bg-gray-200"></div>
+                  <div class="text-left">
+                    <div class="text-[10px] text-gray-400 font-extrabold uppercase tracking-widest mb-0.5">Response
+                    </div>
+                    <div class="text-brand-900 font-bold text-md lg:text-lg leading-none">Within 24hrs</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main class="flex-grow">
+          <section id="process" class="pb-14 pt-14 lg:py-20 px-4 lg:px-6 bg-white">
+            <div class="max-w-6xl mx-auto">
+              <div class="text-center mb-12 lg:mb-16 max-w-3xl mx-auto">
+                <h2 class="text-xs font-extrabold text-accent-600 uppercase tracking-[0.2em] mb-4">The Process</h2>
+                <h3 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-brand-900 mb-4 lg:mb-6 tracking-tighter">Allegation vs.
+                  Observation</h3>
+                <p class="text-lg md:text-xl text-gray-500 font-medium leading-relaxed">My office separates what the
+                  report <em>says</em> happened from what the video <em>shows</em> happened.</p>
+              </div>
+              <div class="grid lg:grid-cols-2 gap-8 items-stretch">
+                <div
+                  class="bg-brand-50 border border-brand-100  px-6 py-7 md:p-10 lg:p-12 rounded-[2.5rem] flex flex-col hover:border-brand-200 transition-colors group">
+                  <div
+                    class="w-16 h-16 bg-white rounded-2xl border border-gray-100 flex items-center justify-center mb-5 lg:mb-8 shadow-sm group-hover:scale-105 transition-transform">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-file-text w-8 h-8 text-gray-600">
+                      <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                      <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                      <path d="M10 9H8"></path>
+                      <path d="M16 13H8"></path>
+                      <path d="M16 17H8"></path>
+                    </svg></div>
+                  <div class="flex justify-between items-start mb-4 lg:mb-6">
+                    <div>
+                      <div class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Step 01</div>
+                      <h4 class="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-900 tracking-tight">Arrest Report Review</h4>
+                    </div>
+                    <span
+                      class="bg-white border border-gray-200 text-brand-900 px-4 py-2 rounded-full text-sm font-bold shadow-sm tracking-tight">Free</span>
+                  </div>
+                  <p class="text-gray-600 mb-6 lg:mb-10 leading-relaxed flex-grow font-medium text-[1rem] lg:text-[1.05rem]">I provide a
+                    no-cost review of the arrest report to explain what is assumed versus directly observed, and whether
+                    video evidence is critical to your defense.</p>
+                  <div class="pt-6 lg:pt-8 border-t border-gray-200">
+                    <ul class="space-y-4">
+                      <li class="flex items-center gap-3 text-sm font-bold text-gray-700"><svg
+                          xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                          class="lucide lucide-check-circle2 w-5 h-5 text-green-500 flex-shrink-0">
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <path d="m9 12 2 2 4-4"></path>
+                        </svg>Identify Narrative Assumptions</li>
+                      <li class="flex items-center gap-3 text-sm font-bold text-gray-700"><svg
+                          xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                          class="lucide lucide-check-circle2 w-5 h-5 text-green-500 flex-shrink-0">
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <path d="m9 12 2 2 4-4"></path>
+                        </svg>Assess Video Criticality</li>
+                      <li class="flex items-center gap-3 text-sm font-bold text-gray-700"><svg
+                          xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                          class="lucide lucide-check-circle2 w-5 h-5 text-green-500 flex-shrink-0">
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <path d="m9 12 2 2 4-4"></path>
+                        </svg>No Obligation to Proceed</li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="bg-brand-900  px-6 py-8 md:p-10 lg:p-12 rounded-[2.5rem] flex flex-col text-white relative overflow-hidden shadow-2xl group">
+                  <div
+                    class="absolute top-0 right-0 w-80 h-80 bg-accent-600/20 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 group-hover:bg-accent-600/30 transition-colors duration-500">
+                  </div>
+                  <div
+                    class="relative z-10 w-16 h-16 bg-white/10 rounded-2xl border border-white/10 flex items-center justify-center  mb-5 lg:mb-8 backdrop-blur-md group-hover:scale-105 transition-transform">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-video w-8 h-8 text-white">
+                      <path d="m22 8-6 4 6 4V8Z"></path>
+                      <rect width="14" height="12" x="2" y="6" rx="2" ry="2"></rect>
+                    </svg></div>
+                  <div class="relative z-10 flex justify-between items-start mb-6">
+                    <div>
+                      <div class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Step 02</div>
+                      <h4 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight">Video Analysis Report</h4>
+                    </div><span
+                      class="bg-accent-600 text-white px-4 py-2 whitespace-nowrap rounded-full text-sm font-bold tracking-tight shadow-lg shadow-accent-600/20">$950
+                      Flat</span>
+                  </div>
+                  <p class="relative z-10 text-gray-300 mb-6 lg:mb-10 leading-relaxed flex-grow font-medium  text-[1rem] lg:text-[1.05rem]">If
+                    footage exists, you receive a written, time-stamped Video Evidence Analysis Report comparing the
+                    video to the arrest report frame-by-frame.</p>
+                  <div class="relative z-10 pt-6 lg:pt-8 border-t border-white/10">
+                    <ul class="space-y-4">
+                      <li class="flex items-center gap-3 text-sm font-bold text-gray-200"><svg
+                          xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                          class="lucide lucide-check-circle2 w-5 h-5 text-accent-500 flex-shrink-0">
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <path d="m9 12 2 2 4-4"></path>
+                        </svg>Body-Worn Camera Review</li>
+                      <li class="flex items-center gap-3 text-sm font-bold text-gray-200"><svg
+                          xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                          class="lucide lucide-check-circle2 w-5 h-5 text-accent-500 flex-shrink-0">
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <path d="m9 12 2 2 4-4"></path>
+                        </svg>Timeline &amp; Sequencing</li>
+                      <li class="flex items-center gap-3 text-sm font-bold text-gray-200"><svg
+                          xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                          class="lucide lucide-check-circle2 w-5 h-5 text-accent-500 flex-shrink-0">
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <path d="m9 12 2 2 4-4"></path>
+                        </svg>Plain-English Findings</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="fees" class="pb-14 pt-14 lg:pt-16  lg:pb-20 px-4 lg:px-6 bg-white border-y border-gray-100">
+            <div class="max-w-6xl mx-auto">
+              <div class="flex flex-col md:flex-row justify-between items-end mb-10 lg:mb-16 gap-8">
+                <div>
+                  <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-brand-900 mb-6 tracking-tight">Pay As You Go.
+                  </h2>
+                  <p class="text-lg md:text-xl text-gray-500 font-medium max-w-2xl leading-relaxed">The
+                    <strong>$950</strong> flat fee is broken into three manageable stages. You may pause services after
+                    any stage. Each stage is billed only as completed.</p>
+                </div>
+              </div>
+              <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
+                <div
+                  class="relative py-6 px-5 md:p-8 lg:p-10 rounded-[2rem] border border-gray-200 bg-white hover:shadow-xl transition-all hover:-translate-y-1 duration-300">
+                  <div class="flex items-center justify-between mb-8"><span
+                      class="text-[11px] font-extrabold uppercase text-gray-400 tracking-[0.2em]">Stage 01</span><span
+                      class="bg-green-100 text-green-700 text-[10px] font-extrabold px-2.5 py-1 rounded-md uppercase tracking-wide">To
+                      Start</span></div>
+                  <div class="flex items-baseline gap-1 mb-5"><span
+                      class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-brand-900 tracking-tighter">$350</span><span
+                      class="text-gray-400 font-bold text-sm tracking-wide">/ USD</span></div>
+                  <h3 class="text-xl font-bold text-brand-900 mb-3 tracking-tight">Intake &amp; Orientation</h3>
+                  <p class="text-[15px] text-gray-600 leading-relaxed font-medium">File setup, initial consultation, and
+                    preliminary document review.</p>
+                </div>
+                <div
+                  class="relative py-6 px-5 md:p-8 lg:p-10 rounded-[2rem] border border-gray-200 bg-white hover:shadow-xl transition-all hover:-translate-y-1 duration-300">
+                  <div class="flex items-center justify-between mb-8"><span
+                      class="text-[11px] font-extrabold uppercase text-gray-400 tracking-[0.2em]">Stage 02</span></div>
+                  <div class="flex items-baseline gap-1 mb-5"><span
+                      class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-brand-900 tracking-tighter">$300</span><span
+                      class="text-gray-400 font-bold text-sm tracking-wide">/ USD</span></div>
+                  <h3 class="text-xl font-bold text-brand-900 mb-3 tracking-tight">Substantive Review</h3>
+                  <p class="text-[15px] text-gray-600 leading-relaxed font-medium">Deep-dive forensic analysis of video
+                    evidence and cross-referencing.</p>
+                </div>
+                <div
+                  class="relative py-6 px-5 md:p-8 lg:p-10 rounded-[2rem] border border-gray-200 bg-brand-50 hover:shadow-xl transition-all hover:-translate-y-1 duration-300">
+                  <div class="flex items-center justify-between mb-8"><span
+                      class="text-[11px] font-extrabold uppercase text-gray-400 tracking-[0.2em]">Stage 03</span></div>
+                  <div class="flex items-baseline gap-1 mb-5"><span
+                      class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-brand-900 tracking-tighter">$300</span><span
+                      class="text-gray-400 font-bold text-sm tracking-wide">/ USD</span></div>
+                  <h3 class="text-xl font-bold text-brand-900 mb-3 tracking-tight">Final Report</h3>
+                  <p class="text-[15px] text-gray-600 leading-relaxed font-medium">Drafting and delivery of the final
+                    written Video Analysis Report.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="start" class="pb-16 pt-14 lg:py-20 px-4 lg:px-6 bg-brand-50 lg:pb-32">
+            <div class="max-w-6xl mx-auto">
+              <div class="grid lg:grid-cols-12 gap-10 lg:gap-16">
+                <div class="lg:col-span-5">
+                  <div class="sticky top-28 space-y-10">
+                    <div>
+                      <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-brand-900 mb-6 tracking-tight">Start Your Review.</h2>
+                      <div class="prose prose-sm text-gray-600">
+                        <p class="mb-6 text-base md:text-lg font-medium leading-relaxed text-gray-500">To begin
+                          immediately, please submit the initial <strong>$350 fee</strong> via Zelle and complete the
+                          intake form.</p>
+                        <div class="flex items-start gap-4 bg-white p-5 rounded-2xl border border-gray-100 shadow-sm">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-shield-check w-6 h-6 text-accent-600 flex-shrink-0 mt-0.5">
+                            <path
+                              d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
+                            </path>
+                            <path d="m9 12 2 2 4-4"></path>
+                          </svg>
+                          <p class="text-sm text-gray-600 leading-relaxed font-medium"><strong
+                              class="text-brand-900">Secure Intake:</strong> Your submission is encrypted and sent
+                            directly to Attorney David M. Lamos for conflict check and review.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="relative group perspective">
+                      <div
+                        class="relative bg-brand-900 rounded-[2rem] overflow-hidden shadow-2xl transition-transform duration-300 transform">
+                        <div
+                          class="absolute top-0 right-0 w-64 h-64 bg-accent-600 rounded-full blur-[100px] opacity-20 -translate-y-1/2 translate-x-1/3">
+                        </div>
+                        <div
+                          class="absolute bottom-0 left-0 w-48 h-48 bg-blue-400 rounded-full blur-[80px] opacity-10 translate-y-1/3 -translate-x-1/3">
+                        </div>
+                        <div class="relative px-6 py-7 lg:p-8 text-white">
+                          <div class="flex justify-between items-start mb-6 lg:mb-8">
+                            <div>
+                              <div class="text-[11px] font-extrabold text-gray-400 uppercase tracking-[0.2em]">Payment
+                              </div>
+                              <div class="text-2xl lg:text-3xl font-extrabold tracking-tight text-white mt-1">Zelle<span
+                                  class="align-top text-[0.6em] font-medium">®</span></div>
+                            </div>
+                            <div
+                              class="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center border border-white/10 backdrop-blur-sm">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-arrow-up-right w-6 h-6 text-accent-400">
+                                <path d="M7 7h10v10"></path>
+                                <path d="M7 17 17 7"></path>
+                              </svg></div>
+                          </div>
+                          <div class="mb-5 lg:mb-8">
+                            <div
+                              class="text-4xl lg:text-5xl font-extrabold tracking-tighter text-white drop-shadow-sm flex items-baseline">
+                              $350<span class="text-3xl text-gray-500 font-bold tracking-tight">.00</span></div>
+                            <div class="text-sm text-gray-400 mt-1 lg:mt-2 font-bold tracking-wide">Initial Intake Fee</div>
+                          </div>
+                          <div class="space-y-4">
+                            <div class="bg-white/5 rounded-2xl px-3 py-4 lg:p-5 border border-white/5 backdrop-blur-sm">
+                              <div class="flex justify-between items-center mb-1"><span
+                                  class="text-[10px] font-extrabold text-gray-500 uppercase tracking-widest">Recipient</span>
+                              </div>
+                              <div class="text-md lg:text-lg font-bold text-white tracking-wide">David M. Lamos</div>
+                            </div>
+                            <div
+                              class="bg-white/5 rounded-2xl px-3 py-4 lg:p-5 border border-white/5 backdrop-blur-sm group/btn cursor-pointer transition-colors hover:bg-white/10">
+                              <div class="flex justify-between items-center">
+                                <div><span
+                                    class="text-[10px] font-extrabold text-gray-500 uppercase block mb-1 tracking-widest">Phone
+                                    Number</span>
+                                  <div class="text-md lg:text-xl font-bold text-white tracking-wider font-mono">772-464-4054</div>
+                                </div>
+                              <button type="button" data-copy="772-464-4054"
+                                class="copy-btn w-10 h-10 rounded-full bg-accent-600 flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
+                                aria-label="Copy Zelle phone number">
+                                <!-- COPY ICON -->
+                                <svg class="icon-copy w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                                  <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                                </svg>
+                                <!-- CHECK ICON (HIDDEN BY DEFAULT) -->
+                                <svg class="icon-check hidden w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                  stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                  <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                              </button>
 
-    </body>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="mt-6 lg:mt-8 pt-5 lg:pt-6 border-t border-white/10">
+                            <div class="flex items-start gap-3">
+                              <div
+                                class="text-[10px] font-extrabold text-accent-400 uppercase mt-0.5 whitespace-nowrap tracking-widest">
+                                Memo:</div>
+                              <div class="text-xs text-gray-300 font-medium tracking-wide">Video Review - [Client Name]
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text-xs font-medium text-gray-400 !mt-6 text-center px-4 leading-relaxed">Submitting this form
+                      does not create an attorney-client relationship until a written agreement is signed.</div>
+                  </div>
+                </div>
+                <div class="lg:col-span-7">
+                  <div
+                    class="bg-white rounded-[2rem] px-4 py-6 md:px-12 md:py-10 shadow-xl shadow-gray-200/50 border border-gray-100 h-full">
+                    <div class="mb-6 lg:mb-8 border-b border-gray-100 pb-5 lg:pb-5">
+                      <h3 class="font-bold text-2xl text-brand-900 tracking-tight">Case Intake</h3>
+                      <p class="text-sm font-medium text-gray-500 mt-2">Please provide the details of your arrest or
+                        incident.</p>
+                    </div>
+                    <form id="contactForm" class="space-y-5 lg:space-y-6" name="contact" method="POST" data-netlify="true">
+                      <input
+                        type="hidden" name="_next" value="https://lamos-law-website.vercel.app/thankyou.html"><input
+                        type="hidden" name="_subject" value="New Legal Intake Submission"><input type="hidden"
+                        name="_captcha" value="false">
+                      <div><label
+                          class="block text-[11px] font-extrabold uppercase tracking-[0.15em] text-brand-900/60 mb-2.5 ml-1">Full
+                          Legal Name <span class="text-red-500">*</span></label><input type="text" name="fullName"
+                          required=""
+                          class="w-full bg-gray-50 hover:bg-gray-100 focus:bg-white border border-gray-200 rounded-xl px-3 lg:px-4 py-3 lg:py-3 text-brand-900 placeholder:text-gray-400 focus:border-accent-600 focus:ring-4 focus:ring-accent-600/10 outline-none transition-all duration-300 font-medium text-base tracking-normal"
+                          placeholder="e.g. John Michael Doe" value=""></div>
+                      <div class="grid md:grid-cols-2 gap-6">
+                        <div><label
+                            class="block text-[11px] font-extrabold uppercase tracking-[0.15em] text-brand-900/60 mb-2.5 ml-1">Phone
+                            Number <span class="text-red-500">*</span></label><input type="tel" name="phone" required=""
+                            class="w-full bg-gray-50 hover:bg-gray-100 focus:bg-white border border-gray-200 rounded-xl px-3 lg:px-4 py-3 lg:py-3 text-brand-900 placeholder:text-gray-400 focus:border-accent-600 focus:ring-4 focus:ring-accent-600/10 outline-none transition-all duration-300 font-medium text-base tracking-normal"
+                            placeholder="(555) 000-0000" value=""></div>
+                        <div><label
+                            class="block text-[11px] font-extrabold uppercase tracking-[0.15em] text-brand-900/60 mb-2.5 ml-1">Email
+                            Address <span class="text-red-500">*</span></label><input type="email" name="email"
+                            required=""
+                            class="w-full bg-gray-50 hover:bg-gray-100 focus:bg-white border border-gray-200 rounded-xl px-3 lg:px-4 py-3 lg:py-3 text-brand-900 placeholder:text-gray-400 focus:border-accent-600 focus:ring-4 focus:ring-accent-600/10 outline-none transition-all duration-300 font-medium text-base tracking-normal"
+                            placeholder="name@example.com" value=""></div>
+                      </div>
+                      <div class="grid md:grid-cols-2 gap-6">
+                        <div><label class="block text-[11px] font-extrabold uppercase tracking-[0.15em] text-brand-900/60 mb-2.5 ml-1">Case
+                            Number (If Known)</label><input type="text" name="caseNumber"
+                            class="w-full bg-gray-50 hover:bg-gray-100 focus:bg-white border border-gray-200 rounded-xl px-3 lg:px-4 py-3 lg:py-3 text-brand-900 placeholder:text-gray-400 focus:border-accent-600 focus:ring-4 focus:ring-accent-600/10 outline-none transition-all duration-300 font-medium text-base tracking-normal"
+                            placeholder="e.g. 23-CF-12345"></div>
+                        <div><label
+                            class="block text-[11px] font-extrabold uppercase tracking-[0.15em] text-brand-900/60 mb-2.5 ml-1">Preferred
+                            Contact Method</label>
+                          <div class="relative"><select name="contactPreference"
+                              class="w-full bg-gray-50 hover:bg-gray-100 focus:bg-white border border-gray-200 rounded-xl px-3 lg:px-4 py-3 lg:py-3 text-brand-900 placeholder:text-gray-400 focus:border-accent-600 focus:ring-4 focus:ring-accent-600/10 outline-none transition-all duration-300 font-medium text-base tracking-normal appearance-none cursor-pointer">
+                              <option value="Phone">Phone Call</option>
+                              <option value="Email">Email</option>
+                              <option value="Either">Either</option>
+                            </select>
+                            <div class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-chevron-down w-5 h-5">
+                                <path d="m6 9 6 6 6-6"></path>
+                              </svg></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                          <label for="state"
+                            class="block text-[11px] font-extrabold uppercase tracking-[0.15em] text-brand-900/60 mb-2.5 ml-1">
+                            State where the case is pending <span class="text-red-500">*</span>
+                          </label>
+                          <select id="state" name="state" required class="w-full bg-gray-50 hover:bg-gray-100 focus:bg-white border border-gray-200 rounded-xl
+                                   px-4 py-3 text-brand-900 focus:border-accent-600 focus:ring-4
+                                   focus:ring-accent-600/10 outline-none transition">
+                            <option value="" disabled selected>Select a state</option>
+                            <option value="Florida">Florida</option>
+                            <option value="Other / Not Florida">Other / Not Florida</option>
+                          </select>
+                        </div>
+                      
+                        <div>
+                          <label for="county"
+                            class="block text-[11px] font-extrabold uppercase tracking-[0.15em] text-brand-900/60 mb-2.5 ml-1">
+                            County / Jurisdiction <span class="text-red-500">*</span>
+                          </label>
+                          <input type="text" id="county" name="county" placeholder="e.g., St. Lucie County" required class="w-full bg-gray-50 hover:bg-gray-100 focus:bg-white border border-gray-200 rounded-xl
+                                   px-4 py-3 text-brand-900 focus:border-accent-600 focus:ring-4
+                                   focus:ring-accent-600/10 outline-none transition">
+                        </div>
+                      </div>
 
+                      <div>
+                        <label
+                          class="block text-[11px] font-extrabold uppercase tracking-[0.15em] text-brand-900/60 mb-2.5 ml-1">Brief
+                          Description <span class="text-red-500">*</span></label>
+                          <textarea name="message" required=""
+                          rows="5"
+                          class="w-full bg-gray-50 hover:bg-gray-100 focus:bg-white border border-gray-200 rounded-xl px-3 lg:px-4 py-3 lg:py-3 text-brand-900 placeholder:text-gray-400 focus:border-accent-600 focus:ring-4 focus:ring-accent-600/10 outline-none transition-all duration-300 font-medium text-base tracking-normal"
+                          placeholder="Briefly describe the incident...">
+                        </textarea>
+                        </div>
+                        <button type="submit"
+                        class="w-full bg-brand-900 hover:bg-brand-800 text-white font-bold py-3 lg:py-5 rounded-xl transition-all flex items-center justify-center gap-2 mt-4 text-base tracking-wide shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">Submit
+                        Request <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" class="lucide lucide-send w-4 h-4">
+                          <path d="m22 2-7 20-4-9-9-4Z"></path>
+                          <path d="M22 2 11 13"></path>
+                        </svg>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer class="bg-brand-900 text-white pt-16 lg:pt-20 pb-10">
+          <div class="max-w-7xl mx-auto px-4 lg:px-6">
+            <div class="grid md:grid-cols-2 gap-8 lg:gap-12 items-start mb-12">
+              <div>
+                <div class="flex items-center gap-4 mb-4">
+                  <div
+                    class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-white border border-white/10">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-scale w-6 h-6">
+                      <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path>
+                      <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path>
+                      <path d="M7 21h10"></path>
+                      <path d="M12 3v18"></path>
+                      <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"></path>
+                    </svg></div>
+                  <div>
+                    <h3 class="font-extrabold text-xl leading-none tracking-tight">David M. Lamos, Esq.</h3>
+                    <p class="text-[10px] font-bold text-brand-300 mt-1.5 uppercase tracking-[0.2em]">Independent Video
+                      Evidence Review</p>
+                  </div>
+                </div>
+                <p class="text-brand-300 text-base leading-relaxed max-w-sm font-medium">Providing objective, forensic
+                  analysis of video evidence for individuals and families facing complex legal challenges.</p>
+              </div>
+              <div class="md:text-right">
+                <h4 class="font-bold text-white mb-3 text-lg tracking-tight">Contact</h4>
+                <div class="space-y-1 text-sm text-brand-300 font-medium">
+                  <p>805 Delaware Ave, Fort Pierce, FL 34950</p>
+                  <p class="font-bold text-white text-base">(772) 464-4054</p>
+                  <p>Florida Bar No. 0747386</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="pt-8 border-t border-white/10 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-4">
+              <p class="text-xs font-medium text-brand-400">© 2025 Law Office of David M. Lamos. All Rights Reserved.
+              </p>
+              <p class="text-[10px] font-extrabold text-brand-500 uppercase tracking-[0.2em]">Attorney Advertisement</p>
+            </div>
+          </div>
+        </footer>
+        <button
+          class="fixed bottom-6 right-6 z-40 p-3.5 bg-brand-900 text-white rounded-full shadow-2xl hover:bg-accent-600 transition-colors focus:outline-none focus:ring-2 focus:ring-accent-500 focus:ring-offset-2 border border-white/10"
+          aria-label="Scroll to top" style="opacity: 1; transform: none;"><svg xmlns="http://www.w3.org/2000/svg"
+            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up w-5 h-5">
+            <path d="m5 12 7-7 7 7"></path>
+            <path d="M12 19V5"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- ================= SCRIPTS ================= -->
+    <script>
+      document.getElementById("contactForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const get = n => document.querySelector(`[name="${n}"]`).value.trim();
+
+        const fullName = get("fullName");
+        const phone = get("phone");
+        const email = get("email");
+        const pref = get("contactPreference");
+        const caseNum = get("caseNumber") || "N/A";
+        const msg = get("message");
+
+        const subject = "New Legal Intake – Video Evidence Review";
+        const body =
+          `Full Name: ${fullName}
+    Phone: ${phone}
+    Email: ${email}
+    Preferred Contact: ${pref}
+    Case Number: ${caseNum}
+    
+    Message:
+    ${msg}`;
+
+        window.location.href =
+          "mailto:dmilolamos@gmail.com?subject=" +
+          encodeURIComponent(subject) +
+          "&body=" +
+          encodeURIComponent(body);
+
+        setTimeout(() => {
+          navigator.clipboard.writeText(body).then(() => {
+            document.getElementById("emailFallback").classList.remove("hidden");
+          });
+        }, 600);
+      });
+
+     document.querySelectorAll(".copy-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const value = btn.dataset.copy;
+          const copyIcon = btn.querySelector(".icon-copy");
+          const checkIcon = btn.querySelector(".icon-check");
+
+          navigator.clipboard.writeText(value).then(() => {
+            // Visual feedback
+            copyIcon.classList.add("hidden");
+            checkIcon.classList.remove("hidden");
+            btn.classList.remove("bg-accent-600");
+            btn.classList.add("bg-green-600");
+
+            // Revert after 1 second
+            setTimeout(() => {
+              checkIcon.classList.add("hidden");
+              copyIcon.classList.remove("hidden");
+              btn.classList.remove("bg-green-600");
+              btn.classList.add("bg-accent-600");
+            }, 1000);
+          });
+        });
+      });
+    </script>
+    <script>
+      const mobileMenu = document.getElementById("mobileMenu");
+      const menuBtn = document.getElementById("mobileMenuBtn");
+
+      // Toggle menu
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Smooth scroll + auto-close
+      document.querySelectorAll("[data-scroll]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const id = btn.getAttribute("data-scroll");
+          const el = document.getElementById(id);
+
+          if (el) {
+            const y = el.getBoundingClientRect().top + window.pageYOffset - 80;
+            window.scrollTo({ top: y, behavior: "smooth" });
+          }
+
+          mobileMenu.classList.add("hidden");
+        });
+      });
+
+      // Close menu on resize to desktop
+      window.addEventListener("resize", () => {
+        if (window.innerWidth >= 768) {
+          mobileMenu.classList.add("hidden");
+        }
+      });
+    </script>
+  </body>
 </html>
