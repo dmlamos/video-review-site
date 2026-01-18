@@ -739,6 +739,96 @@
               </div>
             </div>
           </section>
+          <section class="bg-[#1e293b] py-16 md:py-20 px-4 overflow-hidden relative">
+            <div class="max-w-6xl mx-auto">
+              <!-- {/* Hero Area */} -->
+              <div class="mb-8 md:mb-16">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-4 md:mb-8 tracking-tight leading-tight max-w-3xl">
+                  Many criminal cases are lost because key facts are never double-checked.
+                </h2>
+                <p class="text-lg md:text-xl text-gray-200 leading-relaxed max-w-3xl font-light">
+                  Police reports and court records often sound right — until they are examined closely.
+                  I provide focused, paid reviews to identify reasonable doubts and missed opportunities
+                  before critical decisions are made.
+                </p>
+              </div>
+          
+              <!-- {/* Blind Spots List */} -->
+              <div class="mb-12 md:mb-20">
+                <h3 class="text-xl md:text-2xl font-bold text-white mb-4 md:mb-8">Common "Blind Spots" I Identify</h3>
+                <ul class="space-y-4">
+                  <li  class="flex items-start gap-4">
+                    <div class="w-1.5 h-1.5 bg-white rounded-full mt-2.5 flex-shrink-0"></div>
+                    <p class="text-lg text-gray-200 font-medium">Reports that state conclusions rather than recording what was actually observed</p>
+                  </li>
+                  <li class="flex items-start gap-4">
+                    <div class="w-1.5 h-1.5 bg-white rounded-full mt-2.5 flex-shrink-0"></div>
+                    <p class="text-lg text-gray-200 font-medium">Officer narratives that rely on second-hand assumptions or reconstructed timelines</p>
+                  </li>
+                  <li class="flex items-start gap-4"> 
+                    <div class="w-1.5 h-1.5 bg-white rounded-full mt-2.5 flex-shrink-0"></div>
+                    <p class="text-lg text-gray-200 font-medium">Video evidence that contradicts the written account but is never timed, segmented, or reconciled</p>
+                  </li>
+                  <li class="flex items-start gap-4">
+                    <div class="w-1.5 h-1.5 bg-white rounded-full mt-2.5 flex-shrink-0"></div>
+                    <p class="text-lg text-gray-200 font-medium">Sentences that appear lawful until examined for who actually found the required facts</p>
+                  </li>
+                  <li class="flex items-start gap-4">
+                    <div class="w-1.5 h-1.5 bg-white rounded-full mt-2.5 flex-shrink-0"></div>
+                    <p class="text-lg text-gray-200 font-medium">Case records that omit facts or context necessary to fairly evaluate what occurred</p>
+                  </li>
+                </ul>
+              </div>
+          
+              <!-- {/* Bottom CTA Box */} -->
+              <div class="bg-[#0f172a] rounded-[1rem] md:rounded-[2rem] px-4 py-8 md:p-12 shadow-2xl relative">
+                <div class="mb-6 md:mb-10">
+                  <h4 class="text-xl md:text-2xl font-bold text-white leading-normal md:leading-relaxed max-w-3xl">
+                    The Bottom Line: I focus on how conclusions were reached — not just what was decided.
+                  </h4>
+                </div>
+          
+                <div class="grid md:grid-cols-12 gap-12 items-end">
+                  <!-- {/* Attorney Image Column */} -->
+                  <div class="md:col-span-4">
+                    <div class="relative rounded-2xl overflow-hidden aspect-[4/5] border border-white/10 shadow-lg">
+                      <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800"
+                        alt="David M. Lamos"
+                        class="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-500" />
+                    </div>
+                  </div>
+          
+                  <!-- {/* Form Column */} -->
+                  <div class="md:col-span-8 flex flex-col h-full justify-center">
+                    <h5 class="text-xl font-bold text-white mb-6">Is my work right for you?</h5>
+          
+                    <form onSubmit={handleSubmit} class="space-y-4">
+                      <input type="text" name="name" placeholder="Name" required
+                        class="w-full bg-[#f8fafc] rounded-lg p-4 text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-accent-red transition-all" />
+                      <input type="email" name="email" placeholder="Email" required
+                        class="w-full bg-[#f8fafc] rounded-lg p-4 text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-accent-red transition-all" />
+                      <input type="text" name="caseType" placeholder="Case Type" required
+                        class="w-full bg-[#f8fafc] rounded-lg p-4 text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-accent-red transition-all" />
+          
+                      <button type="submit"
+                        class="bg-accent-red text-white font-bold py-4 px-10 rounded-lg hover:bg-opacity-90 active:scale-95 transition-all text-sm tracking-wide shadow-lg shadow-black/20">
+                        Request Diagnostic Review
+                      </button>
+                    </form>
+          
+                    <p class="text-xs text-gray-400 mt-4 md:mt-6 font-medium">
+                      Submissions are reviewed for fit. Not all cases are accepted.
+                    </p>
+                  </div>
+                </div>
+          
+                <!-- {/* Decorative Sparkle */} -->
+                <div class="absolute bottom-12 right-12 text-blue-300/40 hidden md:block">
+                  <Sparkles class="w-16 h-16" />
+                </div>
+              </div>
+            </div>
+          </section> 
         </main>
         <footer class="bg-brand-900 text-white pt-16 lg:pt-20 pb-10">
           <div class="max-w-7xl mx-auto px-4 lg:px-6">
